@@ -142,7 +142,7 @@
 }
 
 .thiefStatus {
-    display: block;
+    display: none;
 }
 .thiefStatus{
     border: none;
@@ -170,7 +170,7 @@
 
 
 .clericStatus {
-    display: block;
+    display: none;
 }
 .clericStatus{
     border: none;

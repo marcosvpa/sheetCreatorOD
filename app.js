@@ -45,3 +45,35 @@ function switchRace() {
         break;
     }
 }
+
+function switchClass() {
+    switch(currentClassSelect.value) {
+        case "hda":
+            document.querySelector('.hdaStatus').style.display ="block";
+            //document.querySelector('.mageStatus').style.display ="none";
+            document.querySelector('.clericStatus').style.display ="none";
+            document.querySelector('.thiefStatus').style.display ="none";
+        break;
+
+        case "mage":
+            document.querySelector('.hdaStatus').style.display ="none";
+            //document.querySelector('.mageStatus').style.display ="block";
+            document.querySelector('.clericStatus').style.display ="none";
+            document.querySelector('.thiefStatus').style.display ="none";
+        break;
+
+        case "cleric":
+            document.querySelector('.hdaStatus').style.display ="none";
+            //document.querySelector('.mageStatus').style.display ="none";
+            document.querySelector('.clericStatus').style.display ="block";
+            document.querySelector('.thiefStatus').style.display ="none";
+        break;
+
+        case "thief":
+            document.querySelector('.hdaStatus').style.display ="none";
+            //document.querySelector('.mageStatus').style.display ="none";
+            document.querySelector('.clericStatus').style.display ="none";
+            document.querySelector('.thiefStatus').style.display ="block";
+        break;
+    }
+}

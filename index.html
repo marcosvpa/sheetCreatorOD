@@ -19,6 +19,7 @@
 
            
                 <div class="raceAndClass">
+
                     <div class="raceSelect" >
                         <label for="myRace" >Raça:</label>
                             <select class="myRace"  name="Selecione" onclick="switchRace()">
@@ -31,7 +32,7 @@
 
                     <div class="classSelect">
                         <label for="myClass">Classe:</label>
-                            <select class="myClass" name="Selecione">
+                            <select class="myClass" name="Selecione" onclick="switchClass()">
                                 <option value="hda">Homem das Armas</option>
                                 <option value="mage">Mago</option>
                                 <option value="cleric">Clerigo</option>
@@ -114,52 +115,25 @@
                 </div>
 
                 <div class="hdaStatus">
-                    <p class="hdaNameText">Homem das Armas.</p>
-                    <p class="hdaInfo">
-                        O homem de armas é o especialista em combate. Por ser uma classe versátil, o
-                        homem de armas pode priorizar ou a Força, atributo principal para combate
-                        corpo-a-corpo, ou a Destreza, atributo principal para combate à distância. Devido à sua capacidade de resistir aos ferimentos, geralmente o homem de armas se
-                        coloca em meio aos inimigos para atrair a sua atenção e, dessa forma, proteger
-                        seus companheiros mais fracos e feridos. A versatilidade do homem de armas
-                        afeta também as opções de armas e armaduras a serem usadas, podendo usar
-                        qualquer arma e armadura. A partir do 7º nível, o homem de armas pode realizar
-                        um segundo ataque em seu turno. A partir do 11º nível, o homem de armas pode
-                        construir uma fortaleza e conquistar seguidores.
-                    </p>
-                    Bonus de Ataque(BA):<input class="hdaBA" type="number" style="width: 30px;"readonly>
-                    Jogada de Proteção(JP):<input class="hdaJP" type="number" style="width: 30px;"readonly>
-                    Pontos de Vida(1d10): <input class="hdaPV" type="number" style="width: 30px;"readonly>
-                    
+                        <p class="hdaNameText">Homem das Armas.</p>
+                        <p class="hdaInfo">
+                            O homem de armas é o especialista em combate. Por ser uma classe versátil, o
+                            homem de armas pode priorizar ou a Força, atributo principal para combate
+                            corpo-a-corpo, ou a Destreza, atributo principal para combate à distância. Devido à sua capacidade de resistir aos ferimentos, geralmente o homem de armas se
+                            coloca em meio aos inimigos para atrair a sua atenção e, dessa forma, proteger
+                            seus companheiros mais fracos e feridos. A versatilidade do homem de armas
+                            afeta também as opções de armas e armaduras a serem usadas, podendo usar
+                            qualquer arma e armadura. A partir do 7º nível, o homem de armas pode realizar
+                            um segundo ataque em seu turno. A partir do 11º nível, o homem de armas pode
+                            construir uma fortaleza e conquistar seguidores.
+                        </p>
+                        Bonus de Ataque(BA):<input class="hdaBA" type="number" style="width: 30px;"readonly>
+                        Jogada de Proteção(JP):<input class="hdaJP" type="number" style="width: 30px;"readonly>
+                        Pontos de Vida(1d10): <input class="hdaPV" type="number" style="width: 30px;"readonly>
+                        
                 </div>
 
-            <div class="thiefStatus">
-                    <p class="thiefNameText">Gatuno</p>
-                    <p class="thiefInfo">
-                        Um personagem ladrão se especializa em arrombar fechaduras, desarmar armadilhas e outras atividades furtivas, além de roubar, pungar e outras formas ilícitas
-                        de enriquecimento. Para garantir a sua agilidade e métodos furtivos, o principal atributo do ladrão é a Destreza. Um ladrão só pode usar armaduras de couro, mas pode usar todo tipo
-                        de arma de uma mão, apesar de preferir armas mais leves e discretas, utilizando-as em conjunto com armas que ataquem à distância. O ladrão pode usar praticamente
-                        todos os tipos de itens mágicos, exceto varinhas, bastões e pergaminhos.
-
-                    </p>
-                    Bonus de Ataque(BA):<input class="thiefBA" type="number" style="width: 30px;"readonly>
-                    Jogada de Proteção(JP):<input class="thiefJP" type="number" style="width: 30px;"readonly>
-                    Pontos de Vida(1d6): <input class="thiefPV" type="number" style="width: 30px;"readonly>
-            </div>
-                <p class="talentosThief">Talentos do Gatuno</p>
-                <div style='border: none; border-bottom: 1px solid black;  margin-left: 10px; margin-bottom: 10px'></div>
-                    <div class="divTalentos">
-                            Arrombar:<input class="arrombar" type="text" style="width: 30px; "readonly>
-                            Armadilha:<input class="armadilha" type="text" style="width: 30px;"readonly>
-                            Escalar:<input class="escalar" type="text" style="width: 30px;"readonly>
-                            Furtividade:<input class="furtividade" type="text" style="width: 30px;"readonly>
-                            <br>
-                            <br>
-                            Pungar:<input class="punga" type="text" style="width: 30px;"readonly>
-                            Percepção:<input class="percepcao" type="text" style="width: 30px;"readonly>
-                            Ataque Furtivo:<input class="atqFurtivo" type="text" style="width: 30px;"readonly>
-                    </div>
-
-                    <div class="clericStatus">
+                <div class="clericStatus">
                         <p class="clericNameText">Clerigo</p>
                         <p class="clericInfo">
                             O clérigo é o líder espiritual de um grupo de aventureiros. Dedicado a servir a um deus, o clérigo toma os dogmas desse deus como guia para as suas decisões. É através dessa devoção que o clérigo recebe suas magias, tão importantes para seguir pregando a palavra de seu deus.O atributo principal do clérigo é a Sabedoria, e é esse atributo que determina a quantidade de magias divinas que pode lançar. O clérigo é o principal inimigo dos mortos-vivos e utiliza o poder da fé, representado pelo seu Carisma, para afastá-los e destruí-los.     
@@ -167,53 +141,41 @@
                         Bonus de Ataque(BA):<input class="clericBA" type="number" style="width: 30px;"readonly>
                         Jogada de Proteção(JP):<input class="clericJP" type="number" style="width: 30px;"readonly>
                         Pontos de Vida(1d8): <input class="clericPV" type="number" style="width: 30px;"readonly>
+                        <p class="talentosClerigo">Afastar mortos-vivos</p>
+                        <div style='border: none; border-bottom: 1px solid black;  margin-left: 10px; margin-bottom: 10px'></div>
+                            <div class="divMortosVivos">
+                                    Mortos-vivos:<input class="afastarMortosVivos" type="text" style="width: 30px; "readonly>
+                            </div>
                 </div>
-                    <p class="talentosClerigo">Afastar mortos-vivos</p>
-                    <div style='border: none; border-bottom: 1px solid black;  margin-left: 10px; margin-bottom: 10px'></div>
-                        <div class="divMortosVivos">
-                                Mortos-vivos:<input class="afastarMortosVivos" type="text" style="width: 30px; "readonly>
-                        </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+                <div class="thiefStatus">
+                        <p class="thiefNameText">Gatuno</p>
+                        <p class="thiefInfo">
+                            Um personagem ladrão se especializa em arrombar fechaduras, desarmar armadilhas e outras atividades furtivas, além de roubar, pungar e outras formas ilícitas
+                            de enriquecimento. Para garantir a sua agilidade e métodos furtivos, o principal atributo do ladrão é a Destreza. Um ladrão só pode usar armaduras de couro, mas pode usar todo tipo
+                            de arma de uma mão, apesar de preferir armas mais leves e discretas, utilizando-as em conjunto com armas que ataquem à distância. O ladrão pode usar praticamente
+                            todos os tipos de itens mágicos, exceto varinhas, bastões e pergaminhos.
+
+                        </p>
+                        Bonus de Ataque(BA):<input class="thiefBA" type="number" style="width: 30px;"readonly>
+                        Jogada de Proteção(JP):<input class="thiefJP" type="number" style="width: 30px;"readonly>
+                        Pontos de Vida(1d6): <input class="thiefPV" type="number" style="width: 30px;"readonly>
+                        <p class="talentosThief">Talentos do Gatuno</p>
+                        <div style='border: none; border-bottom: 1px solid black;  margin-left: 10px; margin-bottom: 10px'></div>
+                            <div class="divTalentos">
+                                    Arrombar:<input class="arrombar" type="text" style="width: 30px; "readonly>
+                                    Armadilha:<input class="armadilha" type="text" style="width: 30px;"readonly>
+                                    Escalar:<input class="escalar" type="text" style="width: 30px;"readonly>
+                                    Furtividade:<input class="furtividade" type="text" style="width: 30px;"readonly>
+                                    <br>
+                                    <br>
+                                    Pungar:<input class="punga" type="text" style="width: 30px;"readonly>
+                                    Percepção:<input class="percepcao" type="text" style="width: 30px;"readonly>
+                                    Ataque Furtivo:<input class="atqFurtivo" type="text" style="width: 30px;"readonly>
+                            </div>
                 </div>
+
+            </div>
 
             <script src="app.js"></script>
         </body>
