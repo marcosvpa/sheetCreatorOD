@@ -124,6 +124,24 @@
 
 
 
+.mageStatus {
+    display: none;
+}
+.mageStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.mageNameText {
+    color:black;
+    margin-left: 35%;
+    font-size: 22px;
+    
+}
+
+
 .hdaStatus {
     display: block;
 }
