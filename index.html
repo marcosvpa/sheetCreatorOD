@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+ <html lang="en">
+	<head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css">
+        <title>Old Dragon Sheet Editor</title>
+	</head>
+	<body>
+            <div class="CharacterSheet">
+            <input class="CharacterName" type="text" value="Nome do personagem">
+
+            <div class="characterLevel">
+                <p>
+                    Nível:<input class="characterLevelNumber" type="number" min="1" max="20" value="1"  style="width: 30px;">
+                </p>
+            </div>
+
+           
+                <div class="raceAndClass">
+                    <div class="raceSelect" >
+                        <label for="myRace" >Raça:</label>
+                            <select class="myRace"  name="Selecione" onclick="switchRace()">
+                                <option value="human" >Humano</option>
+                                <option value="dwarf">Anão</option>
+                                <option value="elf">Elfo</option>
+                                <option value="halfling">Halfling</option>
+                            </select>
+                    </div>
+
+                    <div class="classSelect">
+                        <label for="myClass">Classe:</label>
+                            <select class="myClass" name="Selecione">
+                                <option value="hda">Homem das Armas</option>
+                                <option value="mage">Mago</option>
+                                <option value="cleric">Clerigo</option>
+                                <option value="thief">Gatuno</option>
+                            </select>
+                    </div>
+
+
+                </div>
+
+            
+                <div class="attributesDiv">
+                    FORÇA:<input class="for" type="number" min="3" max="29" style="width: 30px;">
+                    DESTREZA:<input class="des" type="number" min="3" max="29" style="width: 30px;">
+                    CONSTITUIÇÃO:<input class="con" type="number" min="3" max="29" style="width: 30px;">
+                    SABEDORIA:<input class="sab" type="number" min="3" max="29" style="width: 30px;">
+                    INTELIGENCIA:<input class="int" type="number" min="3" max="29" style="width: 30px;">
+                    CARISMA:<input class="car" type="number" min="3" max="29" style="width: 30px;">
+                </div>
+
+                <div class="humanStatus">
+                    <p class="humanNameText">Humano.</p>
+                    <p class="humanInfo">
+                     Pela grande adaptabilidade recebem +2 e –2 em dois atributos à escolha do jogador;
+                    <br>
+                     <label for="humanBonus" >+2 em:</label>
+                     <select id="humanBonus" name="Selecione" style="margin-right: 250px;">
+                         <option value="for">Força</option>
+                         <option value="des">Destreza</option>
+                         <option value="con">Constituição</option>
+                         <option value="sab">Sabedoria</option>
+                         <option value="car">Carisma</option>
+                         <option value="int">Inteligencia</option>
+                     </select>
+ 
+                     <label for="humanPenality" >-2 em:</label>
+                     <select id="humanPenalitys" name="Selecione">
+                         <option value="for">Força</option>
+                         <option value="des">Destreza</option>
+                         <option value="con">Constituição</option>
+                         <option value="sab">Sabedoria</option>
+                         <option value="car">Carisma</option>
+                         <option value="int">Inteligencia</option>
+                     </select>
+                    </p>                    
+                </div>
+
+                <div class="dwarfStatus">
+                    <p class="dwarfNameText">Anão.</p>
+                    <p class="dwarfInfo">
+                     Anões Recebem +2 na Constituição e –2 no Carisma. Detecta desníveis, fossos ou
+                     armadilhas de pedra com um resultado de 1 e 2 no d6.
+                    </p>                    
+                </div>
+
+                <div class="elfStatus">
+                    <p class="elfNameText">Elfo.</p>
+                    <p class="elfInfo">
+                        Elfos são ágeis e precisos, recebendo bônus de +2 na Destreza. Mas são mais frágeis que as demais raças, recebendo penalidade de
+                        -2 na Constituição.Detectam portas secretas passivamente com resultado 1 em 1d6 e ativamente com 1 e 2 em 1d6.Por estarem sempre treinados e possuírem a facilidade natural para a mira, os elfos recebem um bônus de +1 para acertar quando empunham um arco. Elfos são imunes a sono e não precisam dormir.
+                    </p>                    
+                </div>
+
+                <div class="halflingStatus">
+                    <p class="halflingNameText">Halfling.</p>
+                    <p class="halflingInfo">
+                        Halflings possuem movimentos ágeis e minuciosos, o que lhes confere um bônus de +2 na Destreza. Em contrapartida, são mais fracos que os outros humanoides, o que lhes dá uma penalidade de -2 na Força,são especialistas em arremessar coisas, talvez seja reflexo direto dos animados festivais de mira, muito comuns nas suas vilas. Por isso, recebem um bônus de +1 no ataque ao utilizar uma arma de arremesso.Por serem pequenos e ágeis, os haflings recebem um bônus de +2 na sua classe de armadura sempre que estiverem em combate com criaturas maiores que um humano. Halflings só conseguem utilizar armas médias com as duas mãos e não podem usar armas grandes.
+                        São mestres na camuflagem e na furtividade. Possuem 10% de chance de passarem furtivamente ou de esconder-se, mesmo que não sejam ladrões. Caso pertençam à classe ladrão, esse bônus será adicionado ao talento de ladrão Furtividade.
+                    </p>         
+
+                </div>
+
+                <div class="attributesMod">
+                    FOR MOD:<input class="forMod" type="number" style="width: 30px;"readonly>
+                    DES MOD:<input class="desMod" type="number" style="width: 30px;"readonly>
+                    CON MOD:<input class="conMod" type="number" style="width: 30px;"readonly>
+                    SAB MOD:<input class="sabMod" type="number" style="width: 30px;"readonly>
+                    INT MOD:<input class="intMod" type="number" style="width: 30px;"readonly>
+                    CAR MOD:<input class="carMod" type="number" style="width: 30px;"readonly>
+                </div>
+
+                <div class="hdaStatus">
+                    <p class="hdaNameText">Homem das Armas.</p>
+                    <p class="hdaInfo">
+                        O homem de armas é o especialista em combate. Por ser uma classe versátil, o
+                        homem de armas pode priorizar ou a Força, atributo principal para combate
+                        corpo-a-corpo, ou a Destreza, atributo principal para combate à distância. Devido à sua capacidade de resistir aos ferimentos, geralmente o homem de armas se
+                        coloca em meio aos inimigos para atrair a sua atenção e, dessa forma, proteger
+                        seus companheiros mais fracos e feridos. A versatilidade do homem de armas
+                        afeta também as opções de armas e armaduras a serem usadas, podendo usar
+                        qualquer arma e armadura. A partir do 7º nível, o homem de armas pode realizar
+                        um segundo ataque em seu turno. A partir do 11º nível, o homem de armas pode
+                        construir uma fortaleza e conquistar seguidores.
+                    </p>
+                    Bonus de Ataque(BA):<input class="hdaBA" type="number" style="width: 30px;"readonly>
+                    Jogada de Proteção(JP):<input class="hdaJP" type="number" style="width: 30px;"readonly>
+                    Pontos de Vida(1d10): <input class="hdaPV" type="number" style="width: 30px;"readonly>
+                    
+                </div>
+
+            <div class="thiefStatus">
+                    <p class="thiefNameText">Gatuno</p>
+                    <p class="thiefInfo">
+                        Um personagem ladrão se especializa em arrombar fechaduras, desarmar armadilhas e outras atividades furtivas, além de roubar, pungar e outras formas ilícitas
+                        de enriquecimento. Para garantir a sua agilidade e métodos furtivos, o principal atributo do ladrão é a Destreza. Um ladrão só pode usar armaduras de couro, mas pode usar todo tipo
+                        de arma de uma mão, apesar de preferir armas mais leves e discretas, utilizando-as em conjunto com armas que ataquem à distância. O ladrão pode usar praticamente
+                        todos os tipos de itens mágicos, exceto varinhas, bastões e pergaminhos.
+
+                    </p>
+                    Bonus de Ataque(BA):<input class="thiefBA" type="number" style="width: 30px;"readonly>
+                    Jogada de Proteção(JP):<input class="thiefJP" type="number" style="width: 30px;"readonly>
+                    Pontos de Vida(1d6): <input class="thiefPV" type="number" style="width: 30px;"readonly>
+            </div>
+                <p class="talentosThief">Talentos do Gatuno</p>
+                <div style='border: none; border-bottom: 1px solid black;  margin-left: 10px; margin-bottom: 10px'></div>
+                    <div class="divTalentos">
+                            Arrombar:<input class="arrombar" type="text" style="width: 30px; "readonly>
+                            Armadilha:<input class="armadilha" type="text" style="width: 30px;"readonly>
+                            Escalar:<input class="escalar" type="text" style="width: 30px;"readonly>
+                            Furtividade:<input class="furtividade" type="text" style="width: 30px;"readonly>
+                            <br>
+                            <br>
+                            Pungar:<input class="punga" type="text" style="width: 30px;"readonly>
+                            Percepção:<input class="percepcao" type="text" style="width: 30px;"readonly>
+                            Ataque Furtivo:<input class="atqFurtivo" type="text" style="width: 30px;"readonly>
+                    </div>
+
+                    <div class="clericStatus">
+                        <p class="clericNameText">Clerigo</p>
+                        <p class="clericInfo">
+                            O clérigo é o líder espiritual de um grupo de aventureiros. Dedicado a servir a um deus, o clérigo toma os dogmas desse deus como guia para as suas decisões. É através dessa devoção que o clérigo recebe suas magias, tão importantes para seguir pregando a palavra de seu deus.O atributo principal do clérigo é a Sabedoria, e é esse atributo que determina a quantidade de magias divinas que pode lançar. O clérigo é o principal inimigo dos mortos-vivos e utiliza o poder da fé, representado pelo seu Carisma, para afastá-los e destruí-los.     
+                        </p>
+                        Bonus de Ataque(BA):<input class="clericBA" type="number" style="width: 30px;"readonly>
+                        Jogada de Proteção(JP):<input class="clericJP" type="number" style="width: 30px;"readonly>
+                        Pontos de Vida(1d8): <input class="clericPV" type="number" style="width: 30px;"readonly>
+                </div>
+                    <p class="talentosClerigo">Afastar mortos-vivos</p>
+                    <div style='border: none; border-bottom: 1px solid black;  margin-left: 10px; margin-bottom: 10px'></div>
+                        <div class="divMortosVivos">
+                                Mortos-vivos:<input class="afastarMortosVivos" type="text" style="width: 30px; "readonly>
+                        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                </div>
+
+            <script src="app.js"></script>
+        </body>
+
+</html>

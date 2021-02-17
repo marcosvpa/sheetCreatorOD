@@ -1,0 +1,208 @@
+
+.CharacterSheet {
+    border:1px solid black;
+    width: 600px;
+    overflow:auto;
+    margin: auto;
+    padding: 10px;
+    height: auto;
+}
+
+.CharacterName {
+    width: 80%;
+    float: left;
+    font-size: x-large;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    
+}
+
+.raceAndClass {
+    margin-bottom: 80px;
+}
+
+.raceSelect {
+    float:left;
+    width: auto;
+    height:auto;
+    margin-top: 10px; 
+    margin-left: 100px;
+}
+
+.classSelect {
+    float:left;
+    width: auto;
+    height:auto;
+    margin-top: 10px;  
+    margin-left: 40px;
+}
+
+.characterLevel {
+    float:left;
+    width: auto;
+    height:10px;
+    margin-top: auto;
+    padding-left: 20px;
+
+}
+
+.attributesDiv{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    font-size: 9px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+.humanStatus {
+    display: block;
+}
+.humanStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.humanNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+
+.dwarfStatus {
+    display: none;
+}
+.dwarfStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.dwarfNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+.elfStatus {
+    display: none;
+}
+.elfStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.elfNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+
+.halflingStatus {
+    display: none;
+}
+.halflingStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.halflingNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+
+
+.hdaStatus {
+    display: block;
+}
+.hdaStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.hdaNameText {
+    color:black;
+    margin-left: 35%;
+    font-size: 22px;
+    
+}
+
+.thiefStatus {
+    display: block;
+}
+.thiefStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.thiefNameText {
+    color:black;
+    margin-left: 35%;
+    font-size: 22px;
+}
+
+.talentosThief{
+    color:black;
+    margin-left: 35%;
+    font-size: 22px;
+}
+
+.divTalentos {
+    padding-left: 80px;
+}
+
+
+
+.clericStatus {
+    display: block;
+}
+.clericStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.clericNameText {
+    color:black;
+    margin-left: 35%;
+    font-size: 22px;
+}
+
+.talentosClerigo{
+    color:black;
+    margin-left: 35%;
+    font-size: 22px;
+}
+
+.divMortosVivos {
+    padding-left: 200px;
+}
+
+
+
+.attributesMod{
+    font-size: 9px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid black;
+}
+
+

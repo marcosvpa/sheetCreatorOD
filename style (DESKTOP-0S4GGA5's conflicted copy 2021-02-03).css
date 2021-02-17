@@ -1,0 +1,125 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.CharacterSheet {
+    border:1px solid black;
+    width: 600px;
+    overflow:auto;
+    margin: auto;
+    padding: 10px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.CharacterName {
+    width: 98%;
+    font-size: x-large;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    
+}
+
+.raceAndClass {
+    margin-bottom: 40px;
+}
+
+.raceSelect {
+    float:left;
+    width: auto;
+    height:auto;
+    margin-top: 10px; 
+    margin-left: 100px;
+}
+
+.classSelect {
+    float:left;
+    width: auto;
+    height:auto;
+    margin-top: 10px;  
+    margin-left: 100px;
+}
+
+.attributesDiv{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    font-size: 9px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+.humanStatus {
+    display: block;
+}
+.humanStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.humanNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+
+.dwarfStatus {
+    display: none;
+}
+.dwarfStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.dwarfNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+.elfStatus {
+    display: none;
+}
+.elfStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.elfNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+
+.halflingStatus {
+    display: none;
+}
+.halflingStatus{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+.halflingNameText {
+    color:black;
+    margin-left: 40%;
+    font-size: 22px;
+}
+
+.attributesMod{
+    font-size: 9px;
+    margin-left: 50px;
+}
+
